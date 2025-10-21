@@ -1,0 +1,11 @@
+docker run -d --name mysql-container -v ./data/:/var/lib/mysql -p 3307:3307 mysql-simple
+
+docker run -d \
+  --name mysql-container \
+  -v ./data/:/var/lib/mysql \
+  -e MYSQL_DATABASE=bigdata_db \
+  -e MYSQL_USER=bigdata_user \
+  -e MYSQL_PASSWORD=bigdata_password \
+  -e MYSQL_ROOT_PASSWORD=root_password \
+  -p 3307:3306 \
+  mysql-simple
