@@ -61,3 +61,5 @@ target/
 **#*/
 docker_databases/.DS_Store
 docker_databases/mysql/data
+
+venv
